@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2012.4 (64-bit)
+# Build 222254 by xbuild on Tue Dec 18 05:21:09 MST 2012
+# Start of session at: Tue Sep 16 12:16:10 2014
+# Process ID: 9068
+# Log file: D:/ROSTA/hdl-master/projects/adv7511/zed/vivado.log
+# Journal file: D:/ROSTA/hdl-master/projects/adv7511/zed\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Rodin_SystemBuilder
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.xpr}
+WARNING: [Common 17-119] Forward Compatibility: results may vary with future version of Project XML in file: D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.xpr
+WARNING: [Project 1-204] Forward Compatibility: results may vary with future version of DARoots XML in file: D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.data/sources_1/fileset.xml
+WARNING: [Designutils 20-922] The BXML file is of a newer version (0.27) then the current supported version (0.26).
+Data could be potentially be lost
+WARNING: [Project 1-204] Forward Compatibility: results may vary with future version of DARoots XML in file: D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.data/constrs_1/fileset.xml
+WARNING: [Project 1-204] Forward Compatibility: results may vary with future version of DARoots XML in file: D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.data/sim_1/fileset.xml
+Scanning sources...
+Finished scanning sources
+WARNING: [Common 17-119] Forward Compatibility: results may vary with future version of Runs XML in file: D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.data/runs/runs.xml
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2013) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Performance_Explore (Vivado Implementation 2013) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-222] Invalid project part 'xc7z020clg484-1' was replaced with default part 'xc7vx485tffg1157-1'
+ERROR: [Common 17-53] User Exception: Board 'em.avnet.com:zynq:zed:d' not found. Run 'get_boards' Tcl command to view list of applicable boards.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 16 12:19:06 2014...

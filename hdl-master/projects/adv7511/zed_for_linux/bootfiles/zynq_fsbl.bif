@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]D:\ROSTA\hdl-master\projects\adv7511\zed\bootfiles\zynq_fsbl.elf
+	D:\ROSTA\hdl-master\projects\adv7511\zed\bootfiles\system.bit
+	D:\ROSTA\hdl-master\projects\adv7511\zed\bootfiles\u-boot.elf
+}

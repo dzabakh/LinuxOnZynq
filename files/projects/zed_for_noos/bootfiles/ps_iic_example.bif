@@ -1,0 +1,5 @@
+the_ROM_image:
+{
+	[bootloader]D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\Debug\zynq_fsbl.elf
+	D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\ps_iic_example\Debug\ps_iic_example.elf
+}

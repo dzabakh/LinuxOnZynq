@@ -1,0 +1,1 @@
+making a project with i2c and spi connected to the ps without any pl.

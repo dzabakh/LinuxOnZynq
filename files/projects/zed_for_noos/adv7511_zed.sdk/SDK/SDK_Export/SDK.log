@@ -1,0 +1,241 @@
+17:09:00.348 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+17:59:46.873 INFO  - Invoking Bootgen:  
+17:59:47.432 INFO  - Bootgen command execution is done. 
+18:04:16.673 INFO  - Invoking Bootgen:  
+18:04:17.185 INFO  - Bootgen command execution is done. 
+18:10:37.487 INFO  - Specified output file already exists 
+18:10:40.062 INFO  - Invoking Bootgen:  
+18:10:40.577 INFO  - Bootgen command execution is done. 
+18:22:09.939 INFO  - Invoking Bootgen:  
+18:22:10.453 INFO  - Bootgen command execution is done. 
+18:29:21.319 INFO  - Specified output file already exists 
+18:29:23.242 INFO  - Invoking Bootgen:  
+18:29:23.757 INFO  - Bootgen command execution is done. 
+18:37:55.528 INFO  - Specified output file already exists 
+18:37:57.264 INFO  - Invoking Bootgen:  
+18:37:57.784 INFO  - Bootgen command execution is done. 
+20:12:43.310 INFO  - Invoking Bootgen:  
+20:12:43.821 INFO  - Bootgen command execution is done. 
+20:15:02.419 INFO  - Specified output file already exists 
+20:15:03.682 INFO  - Invoking Bootgen:  
+20:15:04.205 INFO  - Bootgen command execution is done. 
+20:19:47.898 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/RemoteSystemsTempFiles' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+20:20:30.622 ERROR - Unable to determine RSE connection corresponding toentry in the launch configuration. 
+20:23:04.329 ERROR - Unable to determine RSE connection corresponding toentry in the launch configuration. 
+20:26:03.401 ERROR - Unexpected error while launching program. org.eclipse.core.runtime.CoreException: Target selection failed.
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.newCoreException(AbstractGDBCDIDebugger.java:215)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:111)
+
+20:26:22.139 ERROR - Unexpected exception while copying binary to target. org.eclipse.rse.services.clientserver.messages.SystemOperationCancelledException: Operation cancelled.
+	at org.eclipse.rse.internal.services.local.files.LocalFileService.upload(LocalFileService.java:691)
+	at com.xilinx.sdk.launch.remote.RSEHelper.copyToTarget(Unknown Source)
+
+20:26:22.139 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Unexpected exception while copying binary to target.
+	at com.xilinx.sdk.launch.remote.internal.RemoteLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+
+20:26:58.577 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+20:26:59.579 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+20:26:59.610 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+20:27:00.346 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+20:27:00.347 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+20:27:00.351 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+20:27:00.352 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+20:27:00.353 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+20:27:00.565 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:27:22.460 INFO  - Updating hardware inferred compiler options for axi_memory_test. 
+20:27:23.212 INFO  - Updating hardware inferred compiler options for hello_world. 
+20:27:23.963 INFO  - Updating hardware inferred compiler options for periph_test. 
+20:27:24.714 INFO  - Updating hardware inferred compiler options for ps_iic_example. 
+20:27:25.465 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+20:27:25.501 INFO  - Clearing existing target manager status. 
+20:27:43.014 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+20:27:43.017 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+20:27:43.028 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+20:27:43.030 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+20:27:43.032 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+22:14:09.718 INFO  - Successfully generated D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\axi_memory_test\src\lscript.ld. 
+22:14:09.719 INFO  - Applying linker script to all configurations of project axi_memory_test. 
+22:14:09.719 INFO  - Setting rebuild state to true for all configurations of project axi_memory_test. 
+22:22:23.271 ERROR - Unexpected error while launching program. java.lang.IndexOutOfBoundsException
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.eclipse.rse.internal.services.local.files.LocalFileService.upload(LocalFileService.java:643)
+
+22:23:10.814 ERROR - Unexpected exception while copying binary to target. org.eclipse.rse.services.clientserver.messages.SystemOperationCancelledException: Operation cancelled.
+	at org.eclipse.rse.internal.services.local.files.LocalFileService.upload(LocalFileService.java:691)
+	at com.xilinx.sdk.launch.remote.RSEHelper.copyToTarget(Unknown Source)
+
+22:23:10.814 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Unexpected exception while copying binary to target.
+	at com.xilinx.sdk.launch.remote.internal.RemoteLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+
+22:24:11.631 INFO  - Specified output file already exists 
+22:24:13.438 INFO  - Invoking Bootgen:  
+22:24:13.960 INFO  - Bootgen command execution is done. 
+22:38:49.233 INFO  - Specified output file already exists 
+22:38:50.313 INFO  - Invoking Bootgen:  
+22:38:50.830 INFO  - Bootgen command execution is done. 
+22:41:13.753 INFO  - Specified output file already exists 
+22:41:15.117 INFO  - Invoking Bootgen:  
+22:41:15.635 INFO  - Bootgen command execution is done. 
+22:44:47.437 INFO  - Invoking Bootgen:  
+22:44:47.952 INFO  - Bootgen command execution is done. 
+22:46:41.475 INFO  - Specified output file already exists 
+22:46:42.884 INFO  - Invoking Bootgen:  
+22:46:43.396 INFO  - Bootgen command execution is done. 
+22:57:17.607 INFO  - Project axi_interact_bsp was a BSP project. Please update references. 
+22:57:17.607 ERROR - SDK has detected that project axi_interact_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+23:02:19.969 INFO  - Successfully generated D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\axi_test\src\lscript.ld. 
+23:02:19.970 INFO  - Applying linker script to all configurations of project axi_test. 
+23:02:19.970 INFO  - Setting rebuild state to true for all configurations of project axi_test. 
+23:03:19.092 INFO  - Specified output file already exists 
+23:03:20.261 INFO  - Invoking Bootgen:  
+23:03:20.779 INFO  - Bootgen command execution is done. 
+23:18:59.733 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+23:18:59.734 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+10:38:58.252 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+10:38:59.541 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+10:38:59.553 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+10:39:22.298 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+10:39:22.299 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+10:39:22.303 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+10:39:22.304 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+10:39:22.305 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+10:39:22.523 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:39:28.851 INFO  - Updating hardware inferred compiler options for axi_test. 
+10:39:29.602 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:39:30.352 INFO  - Updating hardware inferred compiler options for periph_test. 
+10:39:31.102 INFO  - Updating hardware inferred compiler options for ps_iic_example. 
+10:39:31.853 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+10:39:31.881 INFO  - Clearing existing target manager status. 
+10:39:52.467 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+10:39:52.469 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+10:39:52.478 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+10:39:52.480 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+10:39:52.481 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+10:44:42.141 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+10:55:08.115 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:11:17.247 INFO  - Specified output file already exists 
+11:11:18.438 INFO  - Invoking Bootgen:  
+11:11:18.954 INFO  - Bootgen command execution is done. 
+11:17:38.225 INFO  - Specified output file already exists 
+11:17:39.626 INFO  - Invoking Bootgen:  
+11:17:40.144 INFO  - Bootgen command execution is done. 
+11:17:45.513 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+11:17:45.517 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:19:07.098 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+11:19:08.239 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+11:19:08.252 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+11:19:08.354 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+11:19:08.355 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+11:19:08.360 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+11:19:08.361 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+11:19:08.361 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+11:19:08.754 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:19:31.197 INFO  - Updating hardware inferred compiler options for axi_test. 
+11:19:31.947 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:19:32.698 INFO  - Updating hardware inferred compiler options for periph_test. 
+11:19:33.449 INFO  - Updating hardware inferred compiler options for ps_iic_example. 
+11:19:34.200 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+11:19:34.251 INFO  - Clearing existing target manager status. 
+11:19:52.678 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+11:19:52.679 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+11:19:52.689 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+11:19:52.691 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+11:19:52.692 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+11:26:30.599 INFO  - Specified output file already exists 
+11:26:31.967 INFO  - Invoking Bootgen:  
+11:26:32.485 INFO  - Bootgen command execution is done. 
+11:35:45.931 INFO  - Specified output file already exists 
+11:35:47.498 INFO  - Invoking Bootgen:  
+11:35:48.014 INFO  - Bootgen command execution is done. 
+11:37:20.035 INFO  - Invoking Bootgen:  
+11:37:20.551 INFO  - Bootgen command execution is done. 
+11:37:44.064 INFO  - Specified output file already exists 
+11:37:45.548 INFO  - Invoking Bootgen:  
+11:37:46.063 INFO  - Bootgen command execution is done. 
+11:56:38.249 INFO  - Specified output file already exists 
+11:56:39.549 INFO  - Invoking Bootgen:  
+11:56:40.064 INFO  - Bootgen command execution is done. 
+12:17:47.883 INFO  - Specified output file already exists 
+12:17:49.370 INFO  - Invoking Bootgen:  
+12:17:49.883 INFO  - Bootgen command execution is done. 
+13:25:41.570 INFO  - Specified output file already exists 
+13:25:43.002 INFO  - Invoking Bootgen:  
+13:25:43.515 INFO  - Bootgen command execution is done. 
+14:18:29.006 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:18:29.106 INFO  - PS initialization will be done as it is not done before. 
+14:18:29.106 INFO  - Running PS initialization.... 
+14:18:31.002 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0xf8000b40
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+14:21:58.187 ERROR - Port COM5 is already in use. 
+14:21:58.502 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:23:29.602 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:27:36.279 ERROR - Port COM5 is already in use. 
+14:27:36.601 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:33:08.063 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:33:38.673 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+14:33:39.655 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+14:33:39.668 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+14:33:39.778 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+14:33:39.779 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+14:33:39.784 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+14:33:39.786 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+14:33:39.789 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+14:33:40.173 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:34:03.641 INFO  - Updating hardware inferred compiler options for axi_test. 
+14:34:04.392 INFO  - Updating hardware inferred compiler options for hello_world. 
+14:34:05.143 INFO  - Updating hardware inferred compiler options for periph_test. 
+14:34:05.894 INFO  - Updating hardware inferred compiler options for ps_iic_example. 
+14:34:06.645 INFO  - Updating hardware inferred compiler options for qwerty. 
+14:34:07.396 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+14:34:07.438 INFO  - Clearing existing target manager status. 
+14:34:25.150 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+14:34:25.152 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+14:34:25.161 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+14:34:25.162 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+14:34:25.163 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+14:38:22.133 INFO  - Specified output file already exists 
+14:38:23.511 INFO  - Invoking Bootgen:  
+14:38:24.027 INFO  - Bootgen command execution is done. 
+15:22:12.175 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

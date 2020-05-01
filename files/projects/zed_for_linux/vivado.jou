@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2012.4 (64-bit)
+# Build 222254 by xbuild on Tue Dec 18 05:21:09 MST 2012
+# Start of session at: Tue Sep 16 12:16:10 2014
+# Process ID: 9068
+# Log file: D:/ROSTA/hdl-master/projects/adv7511/zed/vivado.log
+# Journal file: D:/ROSTA/hdl-master/projects/adv7511/zed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.xpr}

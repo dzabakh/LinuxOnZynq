@@ -1,0 +1,4011 @@
+16:45:23 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+16:45:48 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+10:02:57 **** Auto Build of project zynq_fsbl_0_bsp ****
+make -k all 
+'Finished building libraries'
+10:03:05 **** Clean-only build of configuration Debug for project zynq_fsbl_0 ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl_0.elf.size  ./src/fsbl_handoff.d  zynq_fsbl_0.elf
+' '
+10:03:06 **** Auto Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+10:03:13 **** Clean-only build of project zynq_fsbl_0_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:03:16 **** Clean-only build of configuration Debug for project zynq_fsbl_0 ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl_0.elf.size  ./src/fsbl_handoff.d  zynq_fsbl_0.elf
+' '
+10:03:16 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:03:43 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+10:05:36 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:05:54 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+17:00:59 **** Auto Build of project zynq_fsbl_0_bsp ****
+make -k all 
+'Finished building libraries'
+17:01:05 **** Clean-only build of configuration Debug for project zynq_fsbl_0 ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl_0.elf.size  ./src/fsbl_handoff.d  zynq_fsbl_0.elf
+' '
+17:01:06 **** Auto Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+17:01:11 **** Clean-only build of project zynq_fsbl_0_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+17:01:14 **** Clean-only build of configuration Debug for project zynq_fsbl_0 ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl_0.elf.size  ./src/fsbl_handoff.d  zynq_fsbl_0.elf
+' '
+17:01:14 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+17:01:37 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+17:02:49 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+17:03:07 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+17:51:10 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+17:51:30 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+17:51:30 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+17:51:33 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+17:51:34 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+17:51:35 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+17:51:35 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+17:51:53 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:22:09 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+'Finished building libraries'
+23:22:10 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+'Finished building libraries'
+23:22:15 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:22:18 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+23:22:18 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:22:20 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:22:41 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:24:09 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:24:27 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:37:24 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:37:43 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+23:37:43 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:37:46 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:37:48 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:37:48 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+23:37:49 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:38:07 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:39:09 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:39:10 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:39:27 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+23:44:34 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:44:53 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+23:44:55 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:44:56 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:44:56 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:45:15 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+23:45:15 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+23:45:17 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+23:51:37 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:51:38 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo/bsp\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo/bsp -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:51:55 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+23:53:05 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+23:53:06 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+23:53:23 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+23:53:45 **** Build of project bn_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+
+# device-tree BSP DRC...
+
+#--------------------------------------
+
+Running generate.
+#--------------------------------------
+
+# device-tree BSP generate...
+
+#--------------------------------------
+
+--- device tree generator version: v1.1 ---
+
+generating xilinx.dts
+
+Clock Port Summary:
+
+axi_cpu_interconnect_s00_couplers_auto_pc.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_cpu_interconnect_xbar.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_clkgen.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_core.m_axis_mm2s_clk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_core.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.s_axi_lite_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.m_axi_mm2s_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.m_axis_mm2s_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_interconnect_s00_couplers_auto_pc.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_i2s_adi.S_AXI_ACLK connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_iic_fmc.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_iic_main.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_register_0.s00_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_spdif_tx_core.S_AXI_ACLK connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+sys_audio_clkgen.clk_in1 connected to sys_ps7_FCLK_CLK1:
+
+    CLK_FREQ_HZ = 200000000
+
+sys_audio_clkgen.clk_out1 connected to sys_audio_clkgen_clk_out1:
+
+    CLK_FREQ_HZ = 12287988
+
+    CLK_INPORT = 
+
+    CLK_FACTOR = 
+
+sys_rstgen.slowest_sync_clk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_usb_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_i2c_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+IP connected to bus: ps7_axi_interconnect_0
+
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_i2c_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+
+-slave axi_hdmi_clkgen
+
+-slave axi_hdmi_core
+
+-slave axi_hdmi_dma
+
+-slave axi_i2s_adi
+
+-slave axi_iic_fmc
+
+-slave axi_iic_main
+
+-slave axi_register_0
+
+-slave axi_spdif_tx_core
+
+-slave ps7_afi_0
+
+IP 107510912 ps7_afi_0 is already appended - skip it
+
+-slave ps7_afi_1
+
+IP 107511040 ps7_afi_1 is already appended - skip it
+
+-slave ps7_afi_2
+
+IP 107511168 ps7_afi_2 is already appended - skip it
+
+-slave ps7_afi_3
+
+IP 107511296 ps7_afi_3 is already appended - skip it
+
+-slave ps7_coresight_comp_0
+
+IP 107508992 ps7_coresight_comp_0 is already appended - skip it
+
+-slave ps7_ddr_0
+
+-slave ps7_ddrc_0
+
+IP 107508480 ps7_ddrc_0 is already appended - skip it
+
+-slave ps7_dev_cfg_0
+
+IP 107508608 ps7_dev_cfg_0 is already appended - skip it
+
+-slave ps7_dma_ns
+
+-slave ps7_dma_s
+
+IP 107509760 ps7_dma_s is already appended - skip it
+
+-slave ps7_ethernet_0
+
+IP 107507712 ps7_ethernet_0 is already appended - skip it
+
+-slave ps7_globaltimer_0
+
+IP 107509376 ps7_globaltimer_0 is already appended - skip it
+
+-slave ps7_gpio_0
+
+IP 107508352 ps7_gpio_0 is already appended - skip it
+
+-slave ps7_gpv_0
+
+IP 107509120 ps7_gpv_0 is already appended - skip it
+
+-slave ps7_i2c_0
+
+IP 107508096 ps7_i2c_0 is already appended - skip it
+
+-slave ps7_intc_dist_0
+
+IP 107509504 ps7_intc_dist_0 is already appended - skip it
+
+-slave ps7_iop_bus_config_0
+
+IP 107509888 ps7_iop_bus_config_0 is already appended - skip it
+
+-slave ps7_l2cachec_0
+
+IP 107509632 ps7_l2cachec_0 is already appended - skip it
+
+-slave ps7_ocmc_0
+
+IP 107508864 ps7_ocmc_0 is already appended - skip it
+
+-slave ps7_qspi_0
+
+IP 107507072 ps7_qspi_0 is already appended - skip it
+
+-slave ps7_qspi_linear_0
+
+IP 107507200 ps7_qspi_linear_0 is already appended - skip it
+
+-slave ps7_ram_0
+
+-slave ps7_ram_1
+
+IP 107510144 ps7_ram_1 is already appended - skip it
+
+-slave ps7_scuc_0
+
+IP 107509248 ps7_scuc_0 is already appended - skip it
+
+-slave ps7_scugic_0
+
+IP 107510272 ps7_scugic_0 is already appended - skip it
+
+-slave ps7_scutimer_0
+
+IP 107510400 ps7_scutimer_0 is already appended - skip it
+
+-slave ps7_scuwdt_0
+
+IP 107510528 ps7_scuwdt_0 is already appended - skip it
+
+-slave ps7_sd_0
+
+IP 107507968 ps7_sd_0 is already appended - skip it
+
+-slave ps7_slcr_0
+
+IP 107510656 ps7_slcr_0 is already appended - skip it
+
+-slave ps7_ttc_0
+
+IP 107508224 ps7_ttc_0 is already appended - skip it
+
+-slave ps7_uart_1
+
+IP 107506944 ps7_uart_1 is already appended - skip it
+
+-slave ps7_usb_0
+
+IP 107507840 ps7_usb_0 is already appended - skip it
+
+-slave ps7_xadc_0
+
+IP 107508736 ps7_xadc_0 is already appended - skip it
+
+ps7_afi_0
+
+ps7_afi_1
+
+ps7_afi_2
+
+ps7_afi_3
+
+axi_hdmi_clkgen
+
+axi_hdmi_core
+
+axi_i2s_adi
+
+axi_register_0
+
+axi_spdif_tx_core
+
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0} {i2c0 aliasref ps7_i2c_0 0} {i2c1 aliasref axi_iic_fmc 1}
+{i2c2 aliasref axi_iic_main 2}
+
+WARNING:EDK - : no console ip was specified.  This may prevent output from
+   appearing on the boot console.
+
+
+Running post_generate.
+Running execs_generate.
+'Finished building libraries'
+23:53:48 **** Build of configuration Debug for project bn ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bn_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bn_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+../src/platform.c:43:23: fatal error: xil_cache.h: No such file or directory
+compilation terminated.
+make: *** [src/platform.o] Error 1
+11:48:30 **** Auto Build of project bn_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+
+# device-tree BSP DRC...
+
+#--------------------------------------
+
+Running generate.
+#--------------------------------------
+
+# device-tree BSP generate...
+
+#--------------------------------------
+
+--- device tree generator version: v1.1 ---
+
+generating xilinx.dts
+
+Clock Port Summary:
+
+axi_cpu_interconnect_s00_couplers_auto_pc.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_cpu_interconnect_xbar.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_clkgen.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_core.m_axis_mm2s_clk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_core.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.s_axi_lite_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.m_axi_mm2s_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.m_axis_mm2s_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_interconnect_s00_couplers_auto_pc.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_i2s_adi.S_AXI_ACLK connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_iic_fmc.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_iic_main.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_register_0.s00_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_spdif_tx_core.S_AXI_ACLK connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+sys_audio_clkgen.clk_in1 connected to sys_ps7_FCLK_CLK1:
+
+    CLK_FREQ_HZ = 200000000
+
+sys_audio_clkgen.clk_out1 connected to sys_audio_clkgen_clk_out1:
+
+    CLK_FREQ_HZ = 12287988
+
+    CLK_INPORT = 
+
+    CLK_FACTOR = 
+
+sys_rstgen.slowest_sync_clk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_usb_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_i2c_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+IP connected to bus: ps7_axi_interconnect_0
+
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_i2c_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+
+-slave axi_hdmi_clkgen
+
+-slave axi_hdmi_core
+
+-slave axi_hdmi_dma
+
+-slave axi_i2s_adi
+
+-slave axi_iic_fmc
+
+-slave axi_iic_main
+
+-slave axi_register_0
+
+-slave axi_spdif_tx_core
+
+-slave ps7_afi_0
+
+IP 107773056 ps7_afi_0 is already appended - skip it
+
+-slave ps7_afi_1
+
+IP 107773184 ps7_afi_1 is already appended - skip it
+
+-slave ps7_afi_2
+
+IP 107773312 ps7_afi_2 is already appended - skip it
+
+-slave ps7_afi_3
+
+IP 107773440 ps7_afi_3 is already appended - skip it
+
+-slave ps7_coresight_comp_0
+
+IP 107771136 ps7_coresight_comp_0 is already appended - skip it
+
+-slave ps7_ddr_0
+
+-slave ps7_ddrc_0
+
+IP 107770624 ps7_ddrc_0 is already appended - skip it
+
+-slave ps7_dev_cfg_0
+
+IP 107770752 ps7_dev_cfg_0 is already appended - skip it
+
+-slave ps7_dma_ns
+
+-slave ps7_dma_s
+
+IP 107771904 ps7_dma_s is already appended - skip it
+
+-slave ps7_ethernet_0
+
+IP 107769856 ps7_ethernet_0 is already appended - skip it
+
+-slave ps7_globaltimer_0
+
+IP 107771520 ps7_globaltimer_0 is already appended - skip it
+
+-slave ps7_gpio_0
+
+IP 107770496 ps7_gpio_0 is already appended - skip it
+
+-slave ps7_gpv_0
+
+IP 107771264 ps7_gpv_0 is already appended - skip it
+
+-slave ps7_i2c_0
+
+IP 107770240 ps7_i2c_0 is already appended - skip it
+
+-slave ps7_intc_dist_0
+
+IP 107771648 ps7_intc_dist_0 is already appended - skip it
+
+-slave ps7_iop_bus_config_0
+
+IP 107772032 ps7_iop_bus_config_0 is already appended - skip it
+
+-slave ps7_l2cachec_0
+
+IP 107771776 ps7_l2cachec_0 is already appended - skip it
+
+-slave ps7_ocmc_0
+
+IP 107771008 ps7_ocmc_0 is already appended - skip it
+
+-slave ps7_qspi_0
+
+IP 107769216 ps7_qspi_0 is already appended - skip it
+
+-slave ps7_qspi_linear_0
+
+IP 107769344 ps7_qspi_linear_0 is already appended - skip it
+
+-slave ps7_ram_0
+
+-slave ps7_ram_1
+
+IP 107772288 ps7_ram_1 is already appended - skip it
+
+-slave ps7_scuc_0
+
+IP 107771392 ps7_scuc_0 is already appended - skip it
+
+-slave ps7_scugic_0
+
+IP 107772416 ps7_scugic_0 is already appended - skip it
+
+-slave ps7_scutimer_0
+
+IP 107772544 ps7_scutimer_0 is already appended - skip it
+
+-slave ps7_scuwdt_0
+
+IP 107772672 ps7_scuwdt_0 is already appended - skip it
+
+-slave ps7_sd_0
+
+IP 107770112 ps7_sd_0 is already appended - skip it
+
+-slave ps7_slcr_0
+
+IP 107772800 ps7_slcr_0 is already appended - skip it
+
+-slave ps7_ttc_0
+
+IP 107770368 ps7_ttc_0 is already appended - skip it
+
+-slave ps7_uart_1
+
+IP 107769088 ps7_uart_1 is already appended - skip it
+
+-slave ps7_usb_0
+
+IP 107769984 ps7_usb_0 is already appended - skip it
+
+-slave ps7_xadc_0
+
+IP 107770880 ps7_xadc_0 is already appended - skip it
+
+ps7_afi_0
+
+ps7_afi_1
+
+ps7_afi_2
+
+ps7_afi_3
+
+axi_hdmi_clkgen
+
+axi_hdmi_core
+
+axi_i2s_adi
+
+axi_register_0
+
+axi_spdif_tx_core
+
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0} {i2c0 aliasref ps7_i2c_0 0} {i2c1 aliasref axi_iic_fmc 1}
+{i2c2 aliasref axi_iic_main 2}
+
+WARNING:EDK - : no console ip was specified.  This may prevent output from
+   appearing on the boot console.
+
+
+Running post_generate.
+Running execs_generate.
+'Finished building libraries'
+11:48:34 **** Clean-only build of configuration Debug for project bn ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  bn.elf.size  bn.elf
+' '
+11:48:34 **** Auto Build of configuration Debug for project bn ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bn_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bn_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+../src/platform.c:43:23: fatal error: xil_cache.h: No such file or directory
+compilation terminated.
+make: *** [src/platform.o] Error 1
+11:48:35 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:48:53 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+16:58:09 **** Auto Build of project bn_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+
+# device-tree BSP DRC...
+
+#--------------------------------------
+
+Running generate.
+#--------------------------------------
+
+# device-tree BSP generate...
+
+#--------------------------------------
+
+--- device tree generator version: v1.1 ---
+
+generating xilinx.dts
+
+Clock Port Summary:
+
+axi_cpu_interconnect_s00_couplers_auto_pc.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_cpu_interconnect_xbar.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_clkgen.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_core.m_axis_mm2s_clk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_core.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.s_axi_lite_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.m_axi_mm2s_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_dma.m_axis_mm2s_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_hdmi_interconnect_s00_couplers_auto_pc.aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_i2s_adi.S_AXI_ACLK connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_iic_fmc.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_iic_main.s_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_register_0.s00_axi_aclk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+axi_spdif_tx_core.S_AXI_ACLK connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+sys_audio_clkgen.clk_in1 connected to sys_ps7_FCLK_CLK1:
+
+    CLK_FREQ_HZ = 200000000
+
+sys_audio_clkgen.clk_out1 connected to sys_audio_clkgen_clk_out1:
+
+    CLK_FREQ_HZ = 12287988
+
+    CLK_INPORT = 
+
+    CLK_FACTOR = 
+
+sys_rstgen.slowest_sync_clk connected to sys_ps7_FCLK_CLK0:
+
+    CLK_FREQ_HZ = 100000000
+
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_usb_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_i2c_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+
+    CLK_FREQ_HZ = WARNING: no frequency found!
+
+IP connected to bus: ps7_axi_interconnect_0
+
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_i2c_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+
+-slave axi_hdmi_clkgen
+
+-slave axi_hdmi_core
+
+-slave axi_hdmi_dma
+
+-slave axi_i2s_adi
+
+-slave axi_iic_fmc
+
+-slave axi_iic_main
+
+-slave axi_register_0
+
+-slave axi_spdif_tx_core
+
+-slave ps7_afi_0
+
+IP 108756096 ps7_afi_0 is already appended - skip it
+
+-slave ps7_afi_1
+
+IP 108756224 ps7_afi_1 is already appended - skip it
+
+-slave ps7_afi_2
+
+IP 108756352 ps7_afi_2 is already appended - skip it
+
+-slave ps7_afi_3
+
+IP 108756480 ps7_afi_3 is already appended - skip it
+
+-slave ps7_coresight_comp_0
+
+IP 108754176 ps7_coresight_comp_0 is already appended - skip it
+
+-slave ps7_ddr_0
+
+-slave ps7_ddrc_0
+
+IP 108753664 ps7_ddrc_0 is already appended - skip it
+
+-slave ps7_dev_cfg_0
+
+IP 108753792 ps7_dev_cfg_0 is already appended - skip it
+
+-slave ps7_dma_ns
+
+-slave ps7_dma_s
+
+IP 108754944 ps7_dma_s is already appended - skip it
+
+-slave ps7_ethernet_0
+
+IP 108752896 ps7_ethernet_0 is already appended - skip it
+
+-slave ps7_globaltimer_0
+
+IP 108754560 ps7_globaltimer_0 is already appended - skip it
+
+-slave ps7_gpio_0
+
+IP 108753536 ps7_gpio_0 is already appended - skip it
+
+-slave ps7_gpv_0
+
+IP 108754304 ps7_gpv_0 is already appended - skip it
+
+-slave ps7_i2c_0
+
+IP 108753280 ps7_i2c_0 is already appended - skip it
+
+-slave ps7_intc_dist_0
+
+IP 108754688 ps7_intc_dist_0 is already appended - skip it
+
+-slave ps7_iop_bus_config_0
+
+IP 108755072 ps7_iop_bus_config_0 is already appended - skip it
+
+-slave ps7_l2cachec_0
+
+IP 108754816 ps7_l2cachec_0 is already appended - skip it
+
+-slave ps7_ocmc_0
+
+IP 108754048 ps7_ocmc_0 is already appended - skip it
+
+-slave ps7_qspi_0
+
+IP 108752256 ps7_qspi_0 is already appended - skip it
+
+-slave ps7_qspi_linear_0
+
+IP 108752384 ps7_qspi_linear_0 is already appended - skip it
+
+-slave ps7_ram_0
+
+-slave ps7_ram_1
+
+IP 108755328 ps7_ram_1 is already appended - skip it
+
+-slave ps7_scuc_0
+
+IP 108754432 ps7_scuc_0 is already appended - skip it
+
+-slave ps7_scugic_0
+
+IP 108755456 ps7_scugic_0 is already appended - skip it
+
+-slave ps7_scutimer_0
+
+IP 108755584 ps7_scutimer_0 is already appended - skip it
+
+-slave ps7_scuwdt_0
+
+IP 108755712 ps7_scuwdt_0 is already appended - skip it
+
+-slave ps7_sd_0
+
+IP 108753152 ps7_sd_0 is already appended - skip it
+
+-slave ps7_slcr_0
+
+IP 108755840 ps7_slcr_0 is already appended - skip it
+
+-slave ps7_ttc_0
+
+IP 108753408 ps7_ttc_0 is already appended - skip it
+
+-slave ps7_uart_1
+
+IP 108752128 ps7_uart_1 is already appended - skip it
+
+-slave ps7_usb_0
+
+IP 108753024 ps7_usb_0 is already appended - skip it
+
+-slave ps7_xadc_0
+
+IP 108753920 ps7_xadc_0 is already appended - skip it
+
+ps7_afi_0
+
+ps7_afi_1
+
+ps7_afi_2
+
+ps7_afi_3
+
+axi_hdmi_clkgen
+
+axi_hdmi_core
+
+axi_i2s_adi
+
+axi_register_0
+
+axi_spdif_tx_core
+
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0} {i2c0 aliasref ps7_i2c_0 0} {i2c1 aliasref axi_iic_fmc 1}
+{i2c2 aliasref axi_iic_main 2}
+
+WARNING:EDK - : no console ip was specified.  This may prevent output from
+   appearing on the boot console.
+
+
+Running post_generate.
+Running execs_generate.
+'Finished building libraries'
+16:58:18 **** Auto Build of configuration Debug for project bn ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bn_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+../src/platform.c:43:23: fatal error: xil_cache.h: No such file or directory
+compilation terminated.
+make: *** [src/platform.o] Error 1
+16:58:20 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+16:58:45 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+17:02:22 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+17:02:52 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl_0.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl_0\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl_0.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl_0.elf
+'Finished building: zynq_fsbl_0.elf.size'
+' '
+17:03:09 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl_0.elf.size  ./src/fsbl_handoff.d  zynq_fsbl_0.elf
+' '
+17:03:09 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+17:04:00 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+17:04:00 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+'Finished building libraries'
+17:04:11 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+17:04:11 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '

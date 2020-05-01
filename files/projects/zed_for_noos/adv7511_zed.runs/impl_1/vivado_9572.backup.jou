@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Sep 18 01:43:28 2014
+# Process ID: 7660
+# Log file: D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.runs/impl_1/system_top.rdi
+# Journal file: D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace

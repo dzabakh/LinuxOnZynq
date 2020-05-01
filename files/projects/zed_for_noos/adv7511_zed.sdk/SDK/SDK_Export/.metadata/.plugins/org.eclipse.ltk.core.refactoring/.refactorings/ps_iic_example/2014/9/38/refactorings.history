@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ps_iic_example/src/main.c&apos; to &apos;ps_iic_test.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="ps_iic_test.c" stamp="1411059479487" updateReferences="true"/>
+</session>

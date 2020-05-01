@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.cdt.launch.remoteApplicationLaunchType">
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug\axi_test.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="axi_test"/>
+<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="xilinx.gnu.arm.exe.debug.795230266"/>
+<booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+<stringAttribute key="org.eclipse.debug.core.ATTR_PRERUN_CMDS" value=""/>
+<booleanAttribute key="org.eclipse.debug.core.ATTR_SKIP_DOWNLOAD_TO_TARGET" value="false"/>
+<stringAttribute key="org.eclipse.debug.core.ATTR_TARGET_PATH" value="D:/ROSTA/hdl-master/projects/adv7511/zed_for_noos/adv7511_zed.sdk/SDK/SDK_Export/axi_test/Debug/axi_test.elf"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/axi_test"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.debug.core.REMOTE_TCP" value="Local"/>
+</launchConfiguration>

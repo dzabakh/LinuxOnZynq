@@ -1,0 +1,2326 @@
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:22:08 **** Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22636	   1096	  22612	  46344	   b508	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+20:22:53 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+20:23:03 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+20:24:18 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+20:25:47 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+'Finished building: axi_memory_test.elf.size'
+' '
+20:26:59 **** Auto Build of project hello_world_bsp ****
+make -k all 
+'Finished building libraries'
+20:27:00 **** Auto Build of project hello_world_bsp ****
+make -k all 
+'Finished building libraries'
+20:27:04 **** Auto Build of project axi_memory_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:27:25 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+20:27:25 **** Auto Build of project periph_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:27:43 **** Clean-only build of configuration Debug for project periph_test ****
+make clean 
+rm -rf  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xiic_selftest_example.o ./src/xiicps_selftest_example.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o  ./src/testperiph.d ./src/xdevcfg_selftest_example.d ./src/xdmaps_example_w_intr.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/xiic_selftest_example.d ./src/xiicps_selftest_example.d ./src/xqspips_selftest_example.d ./src/xscugic_tapp_example.d ./src/xscutimer_intr_example.d ./src/xscutimer_polled_example.d ./src/xscuwdt_intr_example.d  periph_test.elf.size  periph_test.elf
+' '
+20:27:43 **** Auto Build of configuration Debug for project periph_test ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building file: ../src/xdevcfg_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_selftest_example.d" -MT"src/xdevcfg_selftest_example.d" -o "src/xdevcfg_selftest_example.o" "../src/xdevcfg_selftest_example.c"
+'Finished building: ../src/xdevcfg_selftest_example.c'
+' '
+'Building file: ../src/xdmaps_example_w_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdmaps_example_w_intr.d" -MT"src/xdmaps_example_w_intr.d" -o "src/xdmaps_example_w_intr.o" "../src/xdmaps_example_w_intr.c"
+'Finished building: ../src/xdmaps_example_w_intr.c'
+' '
+'Building file: ../src/xemacps_example_intr_dma.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.d" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+'Finished building: ../src/xemacps_example_intr_dma.c'
+' '
+'Building file: ../src/xemacps_example_util.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.d" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+'Finished building: ../src/xemacps_example_util.c'
+' '
+'Building file: ../src/xiic_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiic_selftest_example.d" -MT"src/xiic_selftest_example.d" -o "src/xiic_selftest_example.o" "../src/xiic_selftest_example.c"
+'Finished building: ../src/xiic_selftest_example.c'
+' '
+'Building file: ../src/xiicps_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiicps_selftest_example.d" -MT"src/xiicps_selftest_example.d" -o "src/xiicps_selftest_example.o" "../src/xiicps_selftest_example.c"
+'Finished building: ../src/xiicps_selftest_example.c'
+' '
+'Building file: ../src/xqspips_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xqspips_selftest_example.d" -MT"src/xqspips_selftest_example.d" -o "src/xqspips_selftest_example.o" "../src/xqspips_selftest_example.c"
+'Finished building: ../src/xqspips_selftest_example.c'
+' '
+'Building file: ../src/xscugic_tapp_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscugic_tapp_example.d" -MT"src/xscugic_tapp_example.d" -o "src/xscugic_tapp_example.o" "../src/xscugic_tapp_example.c"
+'Finished building: ../src/xscugic_tapp_example.c'
+' '
+'Building file: ../src/xscutimer_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.d" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+'Finished building: ../src/xscutimer_intr_example.c'
+' '
+'Building file: ../src/xscutimer_polled_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_polled_example.d" -MT"src/xscutimer_polled_example.d" -o "src/xscutimer_polled_example.o" "../src/xscutimer_polled_example.c"
+'Finished building: ../src/xscutimer_polled_example.c'
+' '
+'Building file: ../src/xscuwdt_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../periph_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscuwdt_intr_example.d" -MT"src/xscuwdt_intr_example.d" -o "src/xscuwdt_intr_example.o" "../src/xscuwdt_intr_example.c"
+'Finished building: ../src/xscuwdt_intr_example.c'
+' '
+'Building target: periph_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../periph_test_bsp/ps7_cortexa9_0/lib -o "periph_test.elf"  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xiic_selftest_example.o ./src/xiicps_selftest_example.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: periph_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size periph_test.elf  |tee "periph_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75676	   2072	  37040	 114788	  1c064	periph_test.elf
+'Finished building: periph_test.elf.size'
+' '
+20:27:47 **** Auto Build of project ps_iic_example_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:28:04 **** Clean-only build of configuration Debug for project ps_iic_example ****
+make clean 
+rm -rf  ./src/ps_iic_test.o  ./src/ps_iic_test.d  ps_iic_example.elf.size  ps_iic_example.elf
+' '
+20:28:04 **** Auto Build of configuration Debug for project ps_iic_example ****
+make all 
+'Building file: ../src/ps_iic_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ps_iic_example_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps_iic_test.d" -MT"src/ps_iic_test.d" -o "src/ps_iic_test.o" "../src/ps_iic_test.c"
+'Finished building: ../src/ps_iic_test.c'
+' '
+'Building target: ps_iic_example.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_iic_example_bsp/ps7_cortexa9_0/lib -o "ps_iic_example.elf"  ./src/ps_iic_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_iic_example.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_iic_example.elf  |tee "ps_iic_example.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31952	   1888	  22724	  56564	   dcf4	ps_iic_example.elf
+'Finished building: ps_iic_example.elf.size'
+' '
+20:28:04 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:28:22 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+' '
+20:28:22 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+22:14:10 **** Clean-only build of configuration Debug for project axi_memory_test ****
+make clean 
+rm -rf  ./src/axi_test.o  ./src/axi_test.d  axi_memory_test.elf.size  axi_memory_test.elf
+' '
+22:14:10 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22636	   1096	   8276	  32008	   7d08	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:17:58 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+22:19:40 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+'Finished building: axi_memory_test.elf.size'
+' '
+22:20:41 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+22:21:42 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+'Finished building: axi_memory_test.elf.size'
+' '
+22:22:15 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22392	   1096	   8276	  31764	   7c14	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:22:22 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+make: Nothing to be done for `all'.
+22:22:43 **** Incremental Build of configuration Debug for project axi_memory_test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+arm-xilinx-eabi-size: axi_memory_test.elf: File format not recognized
+'Finished building: axi_memory_test.elf.size'
+' '
+22:23:44 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+../src/axi_test.c: In function 'main':
+../src/axi_test.c:21:6: warning: unused variable 'value_in' [-Wunused-variable]
+../src/axi_test.c:20:6: warning: unused variable 'value_out' [-Wunused-variable]
+../src/axi_test.c:19:6: warning: unused variable 'address' [-Wunused-variable]
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22428	   1096	   8276	  31800	   7c38	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:27:23 **** Build of project axi_interact_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+22:27:41 **** Build of configuration Debug for project axi_interact ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building file: ../src/xdevcfg_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_selftest_example.d" -MT"src/xdevcfg_selftest_example.d" -o "src/xdevcfg_selftest_example.o" "../src/xdevcfg_selftest_example.c"
+'Finished building: ../src/xdevcfg_selftest_example.c'
+' '
+'Building file: ../src/xdmaps_example_w_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdmaps_example_w_intr.d" -MT"src/xdmaps_example_w_intr.d" -o "src/xdmaps_example_w_intr.o" "../src/xdmaps_example_w_intr.c"
+'Finished building: ../src/xdmaps_example_w_intr.c'
+' '
+'Building file: ../src/xemacps_example_intr_dma.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.d" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+'Finished building: ../src/xemacps_example_intr_dma.c'
+' '
+'Building file: ../src/xemacps_example_util.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.d" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+'Finished building: ../src/xemacps_example_util.c'
+' '
+'Building file: ../src/xiic_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiic_selftest_example.d" -MT"src/xiic_selftest_example.d" -o "src/xiic_selftest_example.o" "../src/xiic_selftest_example.c"
+'Finished building: ../src/xiic_selftest_example.c'
+' '
+'Building file: ../src/xiicps_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiicps_selftest_example.d" -MT"src/xiicps_selftest_example.d" -o "src/xiicps_selftest_example.o" "../src/xiicps_selftest_example.c"
+'Finished building: ../src/xiicps_selftest_example.c'
+' '
+'Building file: ../src/xqspips_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xqspips_selftest_example.d" -MT"src/xqspips_selftest_example.d" -o "src/xqspips_selftest_example.o" "../src/xqspips_selftest_example.c"
+'Finished building: ../src/xqspips_selftest_example.c'
+' '
+'Building file: ../src/xscugic_tapp_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscugic_tapp_example.d" -MT"src/xscugic_tapp_example.d" -o "src/xscugic_tapp_example.o" "../src/xscugic_tapp_example.c"
+'Finished building: ../src/xscugic_tapp_example.c'
+' '
+'Building file: ../src/xscutimer_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.d" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+'Finished building: ../src/xscutimer_intr_example.c'
+' '
+'Building file: ../src/xscutimer_polled_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_polled_example.d" -MT"src/xscutimer_polled_example.d" -o "src/xscutimer_polled_example.o" "../src/xscutimer_polled_example.c"
+'Finished building: ../src/xscutimer_polled_example.c'
+' '
+'Building file: ../src/xscuwdt_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscuwdt_intr_example.d" -MT"src/xscuwdt_intr_example.d" -o "src/xscuwdt_intr_example.o" "../src/xscuwdt_intr_example.c"
+'Finished building: ../src/xscuwdt_intr_example.c'
+' '
+'Building target: axi_interact.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_interact_bsp/ps7_cortexa9_0/lib -o "axi_interact.elf"  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xiic_selftest_example.o ./src/xiicps_selftest_example.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_interact.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_interact.elf  |tee "axi_interact.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75796	   2072	  37040	 114908	  1c0dc	axi_interact.elf
+'Finished building: axi_interact.elf.size'
+' '
+22:29:38 **** Auto Build of configuration Debug for project axi_interact ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:74:5: warning: implicit declaration of function 'AxiPeriphTest' [-Wimplicit-function-declaration]
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: axi_interact.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_interact_bsp/ps7_cortexa9_0/lib -o "axi_interact.elf"  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xiic_selftest_example.o ./src/xiicps_selftest_example.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/testperiph.o: In function `main':
+D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\axi_interact\Debug/../src/testperiph.c:74: undefined reference to `AxiPeriphTest'
+collect2.exe: error: ld returned 1 exit status
+make: *** [axi_interact.elf] Error 1
+22:29:47 **** Auto Build of configuration Debug for project axi_interact ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:74:5: warning: implicit declaration of function 'AxiPeriphTest' [-Wimplicit-function-declaration]
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: axi_interact.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_interact_bsp/ps7_cortexa9_0/lib -o "axi_interact.elf"  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xiic_selftest_example.o ./src/xiicps_selftest_example.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/testperiph.o: In function `main':
+D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\axi_interact\Debug/../src/testperiph.c:74: undefined reference to `AxiPeriphTest'
+collect2.exe: error: ld returned 1 exit status
+make: *** [axi_interact.elf] Error 1
+22:32:56 **** Build of project axi_interact_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+22:33:13 **** Build of configuration Debug for project axi_interact ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_interact_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: axi_interact.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_interact_bsp/ps7_cortexa9_0/lib -o "axi_interact.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_interact.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_interact.elf  |tee "axi_interact.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	axi_interact.elf
+'Finished building: axi_interact.elf.size'
+' '
+22:38:23 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22636	   1096	   8276	  32008	   7d08	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:40:31 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+../src/axi_test.c: In function 'main':
+../src/axi_test.c:21:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22448	   1096	   8276	  31820	   7c4c	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:40:54 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+../src/axi_test.c: In function 'main':
+../src/axi_test.c:21:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22440	   1096	   8276	  31812	   7c44	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:43:09 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+../src/axi_test.c: In function 'main':
+../src/axi_test.c:21:6: warning: unused variable 'value_in' [-Wunused-variable]
+../src/axi_test.c:20:6: warning: unused variable 'value_out' [-Wunused-variable]
+../src/axi_test.c:19:6: warning: unused variable 'address' [-Wunused-variable]
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22428	   1096	   8276	  31800	   7c38	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:44:16 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+../src/axi_test.c: In function 'main':
+../src/axi_test.c:21:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22440	   1096	   8276	  31812	   7c44	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:46:16 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+../src/axi_test.c: In function 'main':
+../src/axi_test.c:21:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/axi_test.c'
+' '
+'Building target: axi_memory_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_memory_test_bsp/ps7_cortexa9_0/lib -o "axi_memory_test.elf"  ./src/axi_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_memory_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_memory_test.elf  |tee "axi_memory_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22472	   1096	   8276	  31844	   7c64	axi_memory_test.elf
+'Finished building: axi_memory_test.elf.size'
+' '
+22:56:32 **** Auto Build of configuration Debug for project axi_memory_test ****
+make all 
+'Building file: ../src/axi_test.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_memory_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_test.d" -MT"src/axi_test.d" -o "src/axi_test.o" "../src/axi_test.c"
+In file included from ../src/axi_test.c:13:0:
+../../axi_memory_test_bsp/ps7_cortexa9_0/include/xil_io.h:78:26: fatal error: mb_interface.h: No such file or directory
+compilation terminated.
+make: *** [src/axi_test.o] Error 1
+22:57:19 **** Auto Build of configuration Debug for project axi_interact ****
+make all 
+make: Nothing to be done for `all'.
+22:58:26 **** Build of project axi_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+22:58:44 **** Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  22612	  46580	   b5f4	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+22:59:52 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:44:6: error: conflicting types for 'print'
+In file included from ../src/helloworld.c:39:0:
+../../axi_test_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: previous declaration of 'print' was here
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:53:6: warning: unused variable 'value_in' [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+23:01:53 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24992	   1096	  22612	  48700	   be3c	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+23:02:20 **** Clean-only build of configuration Debug for project axi_test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  axi_test.elf.size  axi_test.elf
+' '
+23:02:20 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24992	   1096	   8276	  34364	   863c	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+10:38:59 **** Auto Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:39:22 **** Auto Build of project hello_world_bsp ****
+make -k all 
+'Finished building libraries'
+10:39:27 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  hello_world.elf.size  hello_world.elf
+' '
+10:39:27 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/ps7_cortexa9_0/lib -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  22612	  46580	   b5f4	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+10:39:31 **** Auto Build of project axi_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:39:52 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+10:39:52 **** Auto Build of project periph_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:40:10 **** Auto Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+10:40:10 **** Auto Build of project ps_iic_example_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:40:27 **** Auto Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+10:40:27 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:40:45 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+11:17:09 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24964	   1096	   8276	  34336	   8620	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+11:19:08 **** Auto Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:19:30 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+11:19:34 **** Auto Build of project axi_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:19:52 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+11:19:53 **** Auto Build of project periph_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:20:10 **** Auto Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+11:20:10 **** Auto Build of project ps_iic_example_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:20:28 **** Auto Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+11:20:28 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:20:45 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+11:24:11 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24956	   1096	   8276	  34328	   8618	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+11:24:44 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	   1104	   8292	  34340	   8624	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+11:25:42 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24956	   1096	   8276	  34328	   8618	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+11:35:17 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24956	   1096	   8276	  34328	   8618	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+11:38:53 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24956	   1096	   8276	  34328	   8618	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+11:42:27 **** Build of project qwerty_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:42:46 **** Build of configuration Debug for project qwerty ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../qwerty_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../qwerty_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../qwerty_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: qwerty.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../qwerty_bsp/ps7_cortexa9_0/lib -o "qwerty.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: qwerty.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size qwerty.elf  |tee "qwerty.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	qwerty.elf
+'Finished building: qwerty.elf.size'
+' '
+11:54:49 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24956	   1096	   8276	  34328	   8618	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+12:16:40 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:14: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24980	   1096	   8276	  34352	   8630	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+13:24:45 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:14: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24964	   1096	   8276	  34336	   8620	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+14:18:21 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+14:18:22 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+14:18:23 **** Incremental Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+14:18:23 **** Incremental Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+14:18:24 **** Incremental Build of configuration Debug for project qwerty ****
+make all 
+make: Nothing to be done for `all'.
+14:18:24 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:21:51 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+14:21:52 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+14:21:52 **** Incremental Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+14:21:52 **** Incremental Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+14:21:53 **** Incremental Build of configuration Debug for project qwerty ****
+make all 
+make: Nothing to be done for `all'.
+14:21:53 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:22:36 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:14: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24964	   1096	   8276	  34336	   8620	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+14:23:22 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+14:23:23 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+14:23:23 **** Incremental Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+14:23:23 **** Incremental Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+14:23:24 **** Incremental Build of configuration Debug for project qwerty ****
+make all 
+make: Nothing to be done for `all'.
+14:23:24 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:27:27 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+14:27:28 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+14:27:28 **** Incremental Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+14:27:28 **** Incremental Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+14:27:29 **** Incremental Build of configuration Debug for project qwerty ****
+make all 
+make: Nothing to be done for `all'.
+14:27:29 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:30:28 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+14:31:11 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for `all'.
+14:33:40 **** Auto Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:34:02 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+14:34:07 **** Auto Build of project axi_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:34:25 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+'Finished building: axi_test.elf.size'
+' '
+14:34:25 **** Auto Build of project periph_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:34:42 **** Auto Build of configuration Debug for project periph_test ****
+make all 
+make: Nothing to be done for `all'.
+14:34:43 **** Auto Build of project ps_iic_example_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:34:59 **** Auto Build of configuration Debug for project ps_iic_example ****
+make all 
+make: Nothing to be done for `all'.
+14:34:59 **** Auto Build of project qwerty_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:35:17 **** Auto Build of configuration Debug for project qwerty ****
+make all 
+make: Nothing to be done for `all'.
+14:35:17 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Compiling axivdma"
+"Compiling iic"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling sdps"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:35:35 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: zynq_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\ROSTA\hdl-master\projects\adv7511\zed_for_noos\adv7511_zed.sdk\SDK\SDK_Export\zynq_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: zynq_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+'Finished building: zynq_fsbl.elf.size'
+' '
+14:37:05 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:14: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24960	   1096	   8276	  34332	   861c	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '
+14:37:26 **** Auto Build of configuration Debug for project axi_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../axi_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:6: warning: unused variable 'value_in' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../axi_test_bsp/ps7_cortexa9_0/lib -o "axi_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size axi_test.elf  |tee "axi_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24952	   1096	   8276	  34324	   8614	axi_test.elf
+'Finished building: axi_test.elf.size'
+' '

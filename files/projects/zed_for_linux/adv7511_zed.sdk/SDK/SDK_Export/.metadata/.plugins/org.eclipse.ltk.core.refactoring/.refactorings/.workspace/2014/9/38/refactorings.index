@@ -1,0 +1,4 @@
+1410876172023	Delete resource 'zynq_fsbl'
+1410876189468	Rename resource 'zynq_fsbl_0'
+1410876214135	Delete resource 'zynq_fsbl_bsp'
+1410876220116	Rename resource 'zynq_fsbl_0_bsp'

@@ -1,0 +1,238 @@
+16:43:27.807 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+10:02:56.581 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+10:02:56.819 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+10:02:56.867 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+10:02:56.874 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system_top.bit. 
+10:02:57.061 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+10:02:57.062 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+10:02:57.066 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+10:02:57.067 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+10:02:57.068 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+10:02:57.585 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:02:59.984 INFO  - Updating MSS for Board Support Package Project: zynq_fsbl_0_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: ps7_i2c_0, driver: iicps_v1_04_a.
+ 
+10:03:00.757 INFO  - Updating hardware inferred compiler options for zynq_fsbl_0. 
+10:03:00.759 INFO  - Clearing existing target manager status. 
+10:03:04.956 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl_0\src\ps7_init.c. 
+10:03:04.958 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl_0\src\ps7_init.h. 
+10:03:05.017 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl_0\src\ps7_init.html. 
+10:03:05.037 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl_0\src\ps7_summary.html. 
+10:03:05.043 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl_0\src\ps7_init.tcl. 
+10:03:05.099 INFO  - Closing and re-opening the MSS file of ther project zynq_fsbl_0_bsp 
+10:03:06.929 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+10:08:52.927 INFO  - Specified output file already exists 
+10:08:54.865 INFO  - Invoking Bootgen:  
+10:08:55.899 INFO  - Bootgen command execution is done. 
+10:09:06.132 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+10:09:06.133 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+17:00:57.567 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+17:00:57.925 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+17:00:57.988 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+17:00:58.024 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system_top.bit. 
+17:00:58.333 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+17:00:58.334 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+17:00:58.339 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+17:00:58.340 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+17:00:58.341 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+17:00:58.600 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:01:02.182 INFO  - Updating hardware inferred compiler options for zynq_fsbl_0. 
+17:01:02.183 INFO  - Clearing existing target manager status. 
+17:01:04.916 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl_0\src\ps7_init.c. 
+17:01:04.932 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl_0\src\ps7_init.h. 
+17:01:05.045 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl_0\src\ps7_init.html. 
+17:01:05.047 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl_0\src\ps7_summary.html. 
+17:01:05.056 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl_0\src\ps7_init.tcl. 
+17:01:05.065 INFO  - Closing and re-opening the MSS file of ther project zynq_fsbl_0_bsp 
+17:01:06.784 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:06:21.214 INFO  - Invoking Bootgen:  
+17:06:21.745 INFO  - Bootgen command execution is done. 
+17:08:35.758 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:51:08.902 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+17:51:09.048 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+17:51:09.060 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+17:51:09.101 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+17:51:09.275 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+17:51:09.276 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+17:51:09.280 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+17:51:09.281 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+17:51:09.282 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+17:51:09.531 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:51:29.855 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+17:51:29.879 INFO  - Clearing existing target manager status. 
+17:51:33.307 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+17:51:33.309 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+17:51:33.317 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+17:51:33.318 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+17:51:33.320 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+17:51:33.323 INFO  - Closing and re-opening the MSS file of ther project zynq_fsbl_bsp 
+17:51:34.864 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:53:04.290 INFO  - Invoking Bootgen:  
+17:53:04.806 INFO  - Bootgen command execution is done. 
+18:07:49.011 INFO  - Invoking Bootgen:  
+18:07:49.529 INFO  - Bootgen command execution is done. 
+18:18:16.829 INFO  - Invoking Bootgen:  
+18:18:17.964 INFO  - Bootgen command execution is done. 
+19:14:49.370 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+19:14:49.371 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+23:22:08.521 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+23:22:08.871 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+23:22:08.925 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+23:22:08.962 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+23:22:10.130 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+23:22:10.131 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+23:22:10.135 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+23:22:10.136 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+23:22:10.137 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+23:22:10.569 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:22:11.794 INFO  - Updating MSS for Board Support Package Project: zynq_fsbl_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: axi_register_0, driver: generic_v1_00_a.
+ 
+23:22:12.563 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+23:22:12.567 INFO  - Clearing existing target manager status. 
+23:22:15.029 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+23:22:15.031 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+23:22:15.070 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+23:22:15.072 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+23:22:15.073 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+23:22:15.078 INFO  - Closing and re-opening the MSS file of ther project zynq_fsbl_bsp 
+23:22:16.843 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+23:28:36.760 INFO  - Invoking Bootgen:  
+23:28:37.278 INFO  - Bootgen command execution is done. 
+23:29:07.763 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+23:29:07.764 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+23:37:22.471 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+23:37:22.624 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+23:37:22.637 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+23:37:22.643 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+23:37:22.827 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+23:37:22.828 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+23:37:22.832 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+23:37:22.834 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+23:37:22.835 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+23:37:23.065 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:37:43.425 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+23:37:43.433 INFO  - Clearing existing target manager status. 
+23:37:46.627 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+23:37:46.629 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+23:37:46.635 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+23:37:46.637 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+23:37:46.639 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+23:37:46.643 INFO  - Closing and re-opening the MSS file of ther project zynq_fsbl_bsp 
+23:37:48.366 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+23:39:09.550 INFO  - Saving repository preferences. 
+23:39:09.552 INFO  - Reading in cores from local repositories: 
+		 D:\ROSTA\hdl-master\projects\adv7511\zed\bsp_repo 
+23:39:09.554 INFO  - Updating libgen.options on all BSP projects. 
+23:39:09.556 INFO  - Cleaning BSP projects in the workspace. 
+23:39:25.032 INFO  - Saving repository preferences. 
+23:41:08.405 INFO  - Saving repository preferences. 
+23:41:10.837 INFO  - Saving repository preferences. 
+23:41:11.472 INFO  - Saving repository preferences. 
+23:42:41.108 INFO  - Saving repository preferences. 
+23:42:42.184 INFO  - Saving repository preferences. 
+23:43:50.525 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:44:32.894 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+23:44:33.035 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+23:44:33.047 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+23:44:33.054 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+23:44:33.355 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+23:44:33.356 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+23:44:33.360 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+23:44:33.361 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+23:44:33.362 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+23:44:33.589 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:44:53.671 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+23:44:53.679 INFO  - Clearing existing target manager status. 
+23:44:54.848 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+23:44:54.850 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+23:44:54.857 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+23:44:54.858 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+23:44:54.859 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+23:44:54.862 INFO  - Closing and re-opening the MSS file of ther project zynq_fsbl_bsp 
+23:44:56.748 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+23:48:04.274 INFO  - Saving repository preferences. 
+23:48:05.550 INFO  - Saving repository preferences. 
+23:51:37.577 INFO  - Saving repository preferences. 
+23:51:37.580 INFO  - Reading in cores from local repositories: 
+		 D:\ROSTA\hdl-master\projects\adv7511\zed\bsp_repo\bsp 
+23:51:37.583 INFO  - Updating libgen.options on all BSP projects. 
+23:51:37.585 INFO  - Cleaning BSP projects in the workspace. 
+23:51:42.267 INFO  - Saving repository preferences. 
+23:52:18.628 INFO  - Saving repository preferences. 
+23:53:05.688 INFO  - Saving repository preferences. 
+23:53:05.691 INFO  - Reading in cores from local repositories: 
+		 D:\ROSTA\hdl-master\projects\adv7511\zed\bsp_repo 
+23:53:05.693 INFO  - Updating libgen.options on all BSP projects. 
+23:53:05.694 INFO  - Cleaning BSP projects in the workspace. 
+23:53:07.082 INFO  - Saving repository preferences. 
+23:53:45.270 WARN  - Unable to determine location of documentation for OS device-tree. 
+23:56:09.412 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:48:27.527 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+11:48:27.686 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+11:48:27.699 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+11:48:27.751 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+11:48:27.932 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+11:48:27.933 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+11:48:27.937 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+11:48:27.938 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+11:48:27.939 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+11:48:28.176 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:48:33.457 INFO  - Updating hardware inferred compiler options for bn. 
+11:48:34.208 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+11:48:34.232 INFO  - Clearing existing target manager status. 
+11:48:53.204 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+11:48:53.206 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+11:48:53.216 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+11:48:53.218 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+11:48:53.219 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+01:22:53.622 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+01:22:53.623 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+16:58:07.478 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+16:58:08.058 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+16:58:08.159 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+16:58:08.195 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+16:58:08.382 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+16:58:08.382 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+16:58:08.386 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+16:58:08.387 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+16:58:08.388 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+16:58:08.921 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:58:19.920 INFO  - Updating hardware inferred compiler options for bn. 
+16:58:20.671 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+16:58:20.682 INFO  - Clearing existing target manager status. 
+16:58:44.778 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.c into \zynq_fsbl\src\ps7_init.c. 
+16:58:44.780 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.h into \zynq_fsbl\src\ps7_init.h. 
+16:58:44.789 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.html into \zynq_fsbl\src\ps7_init.html. 
+16:58:44.791 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_summary.html into \zynq_fsbl\src\ps7_summary.html. 
+16:58:44.792 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed\adv7511_zed.sdk\SDK\SDK_Export\hw_platform_0\ps7_init.tcl into \zynq_fsbl\src\ps7_init.tcl. 
+17:03:40.097 INFO  - Project zynq_fsbl_0_bsp was a BSP project. Please update references. 
+17:03:40.097 ERROR - SDK has detected that project zynq_fsbl_0_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+17:06:46.369 INFO  - Invoking Bootgen:  
+17:06:46.887 INFO  - Bootgen command execution is done. 
+17:21:04.001 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+02:17:58.523 INFO  - Processing command line option -hwspec D:/ROSTA/hdl-master/projects/adv7511/zed_for_linux/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+02:17:58.657 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/ROSTA/hdl-master/projects/adv7511/zed_for_linux/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml. 
+02:17:58.670 INFO  - Copied contents of D:/ROSTA/hdl-master/projects/adv7511/zed_for_linux/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+02:17:58.702 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_linux\adv7511_zed.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+02:17:58.875 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_linux\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+02:17:58.876 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_linux\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+02:17:58.880 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_linux\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+02:17:58.881 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_linux\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+02:17:58.882 INFO  - Copied contents of D:\ROSTA\hdl-master\projects\adv7511\zed_for_linux\adv7511_zed.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+02:17:59.127 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 

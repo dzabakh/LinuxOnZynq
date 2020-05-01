@@ -1,0 +1,3 @@
+PROCESSOR=ps7_cortexa9_0
+REPOSITORIES=-lp D:/ROSTA/hdl-master/projects/adv7511/zed/bsp_repo
+HWSPEC=../hw_platform_0/system.xml

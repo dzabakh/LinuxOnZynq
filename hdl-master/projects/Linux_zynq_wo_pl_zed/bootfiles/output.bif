@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]D:\ROSTA\hdl-master\projects\Linux_zynq_wo_pl_zed\bootfiles\zynq_fsbl.elf
+	D:\ROSTA\hdl-master\projects\Linux_zynq_wo_pl_zed\bootfiles\zed_bd_wrapper.bit
+	D:\ROSTA\hdl-master\projects\Linux_zynq_wo_pl_zed\bootfiles\u-boot.elf
+}
